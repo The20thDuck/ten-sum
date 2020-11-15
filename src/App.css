@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: rgb(43, 135, 209);
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .App-logo {
@@ -13,13 +16,14 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-body {
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 1000px;
+  width: 100%;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +39,92 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Title {
+  margin-top: 40px;
+  font-size: calc(25px + 2vmin);
+}
+
+.Game {
+
+  display: grid;
+  /* width: auto; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Grid {
+  /* margin-bottom: 400px; */
+  display: grid;
+  /* width: auto; */
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-columns: repeat( 4, 90px );
+  /* grid-template-rows: 100px 100px; */
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.Button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  /* text-align: center; */
+  /* padding: 20px; */
+  height: 90px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  font-size: calc(25px + 1vmin);
+  color: black;
+  cursor: pointer;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  outline: none;
+}
+
+/* .Button:hover {
+  background-color: rgb(210, 255, 206);
+} */
+
+.Highlight {
+  background-color: rgb(109, 255, 72);
+}
+
+.ScoreDisplay {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 255, 0);
+  border-radius: 5px;
+  height: 60px;
+  width: 250px;
+  font-size: calc(20px + 1vmin);
+  color: black;
+  margin: 40px;
+}
+
+.StartGame {
+  background-color: rgb(251, 255, 0);
+  border-radius: 5px;
+  height: 200px;
+  width: 400px;
+  font-size: calc(45px + 1vmin);
+  color: black;
+  margin: 40px;
+
+}
+
+.Clock {
+  margin-bottom: 30px;
 }
